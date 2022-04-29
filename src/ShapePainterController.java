@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,9 +10,11 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
 
-
+// The main Controller, That responsible for create the Pane, initializing all choices to the user
+// The functionality of removing, clearing, setting colors and shape to draw are also included
 public class ShapePainterController {
 
+	// The Enum represents the available shapes choices to the user
 	private enum ShapeToDraw {
 		Line, Rectangle, Ellipse
 	};
@@ -134,10 +135,11 @@ public class ShapePainterController {
     @FXML void undoShape(ActionEvent event) {
 
     	int countOfShapes = paneBoard.getChildren().size();
+    	int lastShapeIndex = countOfShapes - 1;
     	
     	// removing from the pane and the list itself
-    	paneBoard.getChildren().remove(countOfShapes - 1);
-    	allShapes.remove(countOfShapes - 1);
+    	paneBoard.getChildren().remove(lastShapeIndex);
+    	allShapes.remove(lastShapeIndex);
     }
     
     
