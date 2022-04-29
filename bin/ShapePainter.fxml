@@ -25,13 +25,13 @@
                            <children>
                               <VBox layoutX="-1.0" prefHeight="190.0" prefWidth="158.0">
                                  <children>
-                                    <RadioButton fx:id="ellipseRadioBtn" mnemonicParsing="false" onAction="#selectEllipseShape" prefHeight="29.0" prefWidth="94.0" text="Ellipse">
+                                    <RadioButton fx:id="ellipseRadioBtn" mnemonicParsing="false" onAction="#selectShape" prefHeight="29.0" prefWidth="94.0" text="Ellipse">
                                        <toggleGroup>
                                           <ToggleGroup fx:id="shapeSelection" />
                                        </toggleGroup>
                                     </RadioButton>
-                                    <RadioButton fx:id="lineRadioBtn" mnemonicParsing="false" onAction="#selectElipseShape" prefHeight="29.0" prefWidth="94.0" text="Line" toggleGroup="$shapeSelection" />
-                                    <RadioButton fx:id="rectangleRadioBtn" mnemonicParsing="false" onAction="#selectRectangleShape" prefHeight="29.0" prefWidth="94.0" text="Rectangle" toggleGroup="$shapeSelection" />
+                                    <RadioButton fx:id="lineRadioBtn" mnemonicParsing="false" onAction="#selectShape" prefHeight="29.0" prefWidth="94.0" text="Line" toggleGroup="$shapeSelection" />
+                                    <RadioButton fx:id="rectangleRadioBtn" mnemonicParsing="false" onAction="#selectShape" prefHeight="29.0" prefWidth="94.0" text="Rectangle" toggleGroup="$shapeSelection" />
                                  </children>
                               </VBox>
                            </children>
@@ -44,15 +44,15 @@
                            <children>
                               <VBox layoutX="4.0" layoutY="5.0" prefHeight="133.0" prefWidth="126.0">
                                  <children>
-                                    <RadioButton fx:id="redColorBtn" mnemonicParsing="false" onAction="#selectRedColor" prefHeight="4.0" prefWidth="94.0" text="Red">
+                                    <RadioButton fx:id="redColorBtn" mnemonicParsing="false" onAction="#selectColor" prefHeight="4.0" prefWidth="94.0" text="Red">
                                        <toggleGroup>
                                           <ToggleGroup fx:id="colorSelection" />
                                        </toggleGroup>
                                     </RadioButton>
-                                    <RadioButton fx:id="yellowColBtn" mnemonicParsing="false" onAction="#selectYellowColor" prefHeight="29.0" prefWidth="94.0" text="Yellow" toggleGroup="$colorSelection" />
-                                    <RadioButton fx:id="blueColBtn" mnemonicParsing="false" onAction="#selectBlueColor" prefHeight="29.0" prefWidth="94.0" text="Blue" toggleGroup="$colorSelection" />
-                                    <RadioButton fx:id="greenColBtn" mnemonicParsing="false" onAction="#selectGreenColor" prefHeight="29.0" prefWidth="94.0" text="Green" toggleGroup="$colorSelection" />
-                                    <RadioButton fx:id="blackColorBtn" mnemonicParsing="false" onAction="#selectBlackColor" prefHeight="29.0" prefWidth="94.0" text="Black" toggleGroup="$colorSelection" />
+                                    <RadioButton fx:id="yellowColBtn" mnemonicParsing="false" onAction="#selectColor" prefHeight="29.0" prefWidth="94.0" text="Yellow" toggleGroup="$colorSelection" />
+                                    <RadioButton fx:id="blueColBtn" mnemonicParsing="false" onAction="#selectColor" prefHeight="29.0" prefWidth="94.0" text="Blue" toggleGroup="$colorSelection" />
+                                    <RadioButton fx:id="greenColBtn" mnemonicParsing="false" onAction="#selectColor" prefHeight="29.0" prefWidth="94.0" text="Green" toggleGroup="$colorSelection" />
+                                    <RadioButton fx:id="blackColorBtn" mnemonicParsing="false" onAction="#selectColor" prefHeight="29.0" prefWidth="94.0" text="Black" toggleGroup="$colorSelection" />
                                  </children>
                               </VBox>
                            </children>
